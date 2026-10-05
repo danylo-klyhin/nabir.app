@@ -70,17 +70,17 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="date">Effective October 2, 2026</p>
+  <p class="date">Effective October 5, 2026</p>
 
   <div class="summary">
-    <p>Nabir has no account, no ads, no analytics and no tracking. Your cards are never sent to Nabir’s servers — there are none. They stay on your iPhone and, if iCloud is on, sync through your own private iCloud.</p>
+    <p>Nabir has no account, no ads, no analytics and no tracking. Your library is never stored on Nabir’s servers: it stays on your iPhone and, if iCloud is on, syncs through your own private iCloud. To suggest a translation, the word you type goes to a translator through our server and isn’t stored. Without internet, Apple translates right on your iPhone.</p>
   </div>
 
   <h2>Who we are</h2>
   <p>Nabir is an iPhone app for saving and learning words, made by Danylo Klyhin, an independent developer. Questions about this policy: <a href="mailto:hello@nabir.app">hello@nabir.app</a>.</p>
 
   <h2>What we collect</h2>
-  <p>Nothing. Nabir does not collect, store or share any personal data on servers we control. It contains no analytics, advertising or third‑party tracking code, and it never asks you to sign up.</p>
+  <p>Nothing. Nabir never asks you to sign up and contains no analytics, advertising or third‑party tracking code. The only thing it sends to our server is what a translation suggestion needs, and the server keeps none of it — see <a href="#translation">Translation suggestions</a> below.</p>
 
   <h2>What stays on your iPhone</h2>
   <p>Everything you create in Nabir lives on your device: your areas, folders, decks, terms and definitions, photos you attach to terms, learning progress, study days and settings. The answers you give in the welcome questions stay on your device too.</p>
@@ -88,9 +88,13 @@
   <h2>iCloud sync</h2>
   <p>If you are signed in to iCloud, Nabir syncs your library between your devices using Apple’s CloudKit. The data is stored in your <em>private</em> iCloud database, under your Apple Account. We cannot see, read or access it. Apple’s handling of iCloud data is described in <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. You can turn iCloud off for Nabir at any time in your iPhone’s Settings; your library then stays on the device only.</p>
 
+  <h2 id="translation">Translation suggestions</h2>
+  <p>When you add a word or tap Fill all, Nabir suggests the translation. To do that, the app sends the word, the two languages and a random installation ID to Nabir’s small server on <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>. The server asks an AI translation model on Cloudflare Workers AI; if that model is slow or fails, it also asks a second model through <a href="https://openrouter.ai/privacy">OpenRouter</a>, which passes the request only to <a href="https://deepinfra.com/privacy">DeepInfra</a> in the US. OpenRouter and DeepInfra work under zero data retention: they don’t keep the word or the translation.</p>
+  <p>Our server stores nothing: no words, no translations, no logs. It uses the installation ID and your IP address only to limit how many requests one phone can make per minute, and forgets them within a minute. Translations you’ve already received are remembered only on your iPhone.</p>
+  <p>Without internet, or if our server doesn’t answer, Apple’s translator suggests the translation right on your iPhone, if you’ve downloaded the languages (Settings → your area → Offline Translation). Then the word doesn’t leave your iPhone.</p>
+
   <h2>Features that run on your device</h2>
   <ul>
-    <li><strong>Translation suggestions</strong> use Apple’s built‑in translation with languages downloaded to your iPhone.</li>
     <li><strong>Pronunciation</strong> uses the speech voices built into iOS.</li>
     <li><strong>Photos</strong> are chosen through the system photo picker. Nabir only receives the photos you pick, never your whole library.</li>
     <li><strong>Saving from other apps</strong> through the Share Sheet passes only the text you share into Nabir on your device.</li>
